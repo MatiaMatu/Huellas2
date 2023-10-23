@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Postear</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="homepage-background" [fullscreen]="true">
+  
+  <div class="bienvenida">
+    <div class="itembienv" id="item1">
+      <p>Crea un aviso! </p>
+    </div>
+    <div div class="itembienv" id="item2">
+      <p></p>
+    </div>
+  </div>
+
+  <ion-card class="semitransparent-card">
+    <ion-card-header class="semitransparent-card">
+      <ion-card-title></ion-card-title>
+      <ion-list class="semitransparent-card">
+        <ion-item class="semitransparent-card">
+          <ion-label position="floating">Titulo</ion-label>
+          <ion-input [(ngModel)]="posteo.titulo"></ion-input>
+        </ion-item>
+        <ion-item class="semitransparent-card">
+          <ion-label position="floating">Fecha de extravío</ion-label>
+          <ion-input [(ngModel)]="posteo.fechaperdido"></ion-input>
+        </ion-item>
+        <ion-item class="semitransparent-card">
+          <ion-label position="floating">Descripcion</ion-label>
+          <ion-input autoGrow="true" [(ngModel)]="posteo.descripcion"></ion-input>
+        </ion-item>
+        
+    
+      </ion-list>
+      <ion-card-subtitle></ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+
+      
+
+        
+      <div class="center">
+        <ion-button (click)="addPosteo()"shape="round">Publicar</ion-button>
+      </div>
+      <div class="center">
+      <ion-button (click)="limpiar()"shape="round">Borrar</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+ 
+
+</ion-content>

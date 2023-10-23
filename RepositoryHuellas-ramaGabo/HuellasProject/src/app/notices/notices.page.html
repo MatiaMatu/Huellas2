@@ -1,0 +1,114 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Avisos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="homepage-background" [fullscreen]="true">
+  
+  <div class="bienvenida">
+    <div class="itembienv" id="item1">
+      <p>Bienvenido a Huellas! </p>
+    </div>
+    <div div class="itembienv" id="item2">
+      <p>{{data?.usuario}}</p>
+    </div>
+
+  </div>
+  <ion-card *ngFor="let post of posteos" class="semitransparent-card">
+    <ion-card-header>
+      <ion-card-title> {{post.titulo}} </ion-card-title>
+      <ion-card-subtitle> ULT VEZ VISTO: {{post.fechaperdido}}</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <swiper-container>
+        <swiper-slide><img src="/assets/imgs/gato1.jpg"></swiper-slide>
+        <swiper-slide><img src="/assets/imgs/gato2.jpg"></swiper-slide>
+        <swiper-slide><img src="/assets/imgs/gato3.jpg"></swiper-slide>
+      </swiper-container>
+      <br>
+      <p class="descripcion"> {{post.descripcion}} </p>
+          <br>
+      <div class="center">
+        <ion-button shape="round">Ver</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <ion-card class="semitransparent-card">
+    <ion-card-header>
+      <ion-card-title>Se Busca a Max, Nuestro Perro Labrador Dorado</ion-card-title>
+      <ion-card-subtitle>Ult vez visto: 10/09/23 1.5km</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <swiper-container>
+        <swiper-slide><img src="/assets/imgs/perro1.jpg"></swiper-slide>
+        <swiper-slide><img src="/assets/imgs/perro2.jpg"></swiper-slide>
+        <swiper-slide><img src="/assets/imgs/perro3.jpg"></swiper-slide>
+      </swiper-container>
+      <br>
+      <p class="descripcion"> Max, nuestro amado labrador dorado, desapareció el 10 de septiembre cerca del 
+        parque de la ciudad. Es un perro grande y de pelaje dorado, tiene una mancha blanca 
+        en el pecho y responde a su nombre. Es amigable y juguetón. Si tienes alguna pista 
+        sobre su paradero, por favor, avísanos. Estamos desesperados por encontrarlo.</p>
+          <br>
+      <div class="center">
+        <ion-button shape="round">Ver</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <ion-card class="semitransparent-card">
+    <ion-card-header>
+      <ion-card-title>Desapareció Nuestra Tortuga Ninja en el Barrio Verde</ion-card-title>
+      <ion-card-subtitle>Ult vez visto: 25/07/23 100m</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <swiper-container>
+        <swiper-slide><img src="/assets/imgs/tortuga1.jpg"></swiper-slide>
+        <swiper-slide><img src="/assets/imgs/tortuga2.jpg"></swiper-slide>
+        <swiper-slide><img src="/assets/imgs/tortuga3.jpg"></swiper-slide>
+      </swiper-container>
+      <br>
+      <p class="descripcion">Nuestra querida tortuga, a quien llamamos "Leonardo," desapareció misteriosamente de su terrario 
+        en el barrio Verde el 25 de julio. Es una tortuga de orejas rojas con un caparazón verde y azul. Por favor, 
+        si la has visto o tienes información sobre su paradero, contáctanos. Leonardo es parte de
+         nuestra familia y lo extrañamos mucho.</p>
+          <br>
+      <div class="center">
+        <ion-button shape="round">Ver</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <ion-card class="semitransparent-card">
+    <ion-card-header>
+      <ion-card-title>Buscamos a Panchito, Nuestro Canario Amarillo</ion-card-title>
+      <ion-card-subtitle>Ult vez visto: 05/06/23 3.5km</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <swiper-container>
+        <swiper-slide><img src="/assets/imgs/canario1.jpg"></swiper-slide>
+        <swiper-slide><img src="/assets/imgs/canario2.jpg"></swiper-slide>
+        <swiper-slide><img src="/assets/imgs/canario3.jpg"></swiper-slide>
+      </swiper-container>
+      <br>
+      <p class="descripcion">Panchito, nuestro canario amarillo, se escapó de su jaula el 5 de junio en nuestra casa cerca del 
+        parque central. Es pequeño, de color amarillo brillante, y canta hermosamente. 
+        Si lo ves o escuchas su canto en algún lugar, por favor, ayúdanos a reunirnos con él.
+         Panchito es muy especial para nosotros.</p>
+          <br>
+      <div class="center">
+        <ion-button shape="round">Ver</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <br>
+</ion-content>

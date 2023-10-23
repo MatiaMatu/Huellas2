@@ -1,0 +1,43 @@
+ion-content{
+  --background: linear-gradient(0deg,rgba(255, 255, 255, 0.1), rgba(0,0,0,0.1)),
+  url("/assets/imgs/fondo2.jpg") no-repeat center center / cover;
+}
+
+.center {
+    text-align: center;
+  }
+
+  .semitransparent-card {
+    background-color: rgba(255, 190, 193, 0.9);
+    border-top-left-radius: 46px;
+    border-top-right-radius: 46px;
+    border-bottom-left-radius: 46px;
+    border-bottom-right-radius: 46px;
+  }
+
+  .descripcion {
+    color: black;
+  }
+
+  .bienvenida{
+    padding: 1em;
+    overflow: hidden;
+  }
+
+  .itembienv{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+  }
+
+  #item1{
+    
+    font-size: 25px;
+    color: white;
+  }
+
+  #item2{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffebec;
+  }

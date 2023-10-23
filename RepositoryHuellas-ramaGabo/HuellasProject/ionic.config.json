@@ -1,0 +1,7 @@
+{
+  "name": "HuellasProject",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

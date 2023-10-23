@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@angular/cli": "16.2.6",
+    "@capacitor/cli": "^5.5.0"
+  },
+  "dependencies": {
+    "@capacitor/core": "^5.5.0",
+    "@ionic-native/core": "^5.36.0"
+  }
+}

@@ -1,0 +1,33 @@
+<ion-content>
+  <div class="login-section ion-padding">
+    <div class="heading ion-padding">
+      <h1>Bienvenido a Huellas!</h1>
+      <p>Ingresa para continuar</p>
+    </div>
+    <form [formGroup] ="formularioLogin">
+    <div class="login-form ion-padding">
+      <div class="form-input">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input formControlName="nombre" [(ngModel)]="user.usuario"></ion-input>
+        </ion-item>
+      </div>
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+      </div>
+    
+    </div>
+  </form>
+    <div class="action-button ion-padding">
+      <ion-button size="large" class="login-button" (click)="login()">Ingresar</ion-button>
+      <br>
+      <ion-button size="tiny" fill="clear" class="login-button" routerLink="/recover-password">¿Olvidaste tu contraseña?</ion-button>
+      <ion-button class="signup-button" size="large" fill="outline" routerLink="/notices">Registrarse</ion-button>
+    </div>
+  </div>
+</ion-content>
